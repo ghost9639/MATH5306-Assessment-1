@@ -1,0 +1,1 @@
+The project tasks have been split across folders. Each task folder has the code in a self contained .py file, and a .txt file documenting how the program works / whichever design decisions felt significant enough to highlight. The repo also contains the question sheet as a .pdf, and spyder should be able to open and run all project files.
