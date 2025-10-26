@@ -1,0 +1,45 @@
+
+# Task 10: Magic Dates
+def YearGenerator (yearStart = 1900, yearEnd = 2000):
+    Years = []
+    Months = ["January", "February", "March", "April", "May", "June",
+              "July", "August", "September", "October", "November", "December"]
+    LongMonths = [1, 3, 5, 7, 8, 10, 12]
+    MaxDays = 0
+    for year in range(yearStart, yearEnd+1):
+        
+        for month in range(1, 13):          # for every month in the year
+            
+            if month in LongMonths:        # 31 day months
+               MaxDays = 31
+               
+            elif month == 2:   # february
+                if year % 4 == 0:
+                    if (year % 100 != 0) or (year % 400 == 0):
+                        MaxDays = 29
+                    else:
+                        MaxDays = 28
+                        
+                else:
+                    MaxDays = 28
+                    
+            else:                           # 30 day month
+                MaxDays = 30
+
+            for day in range(1, MaxDays + 1):
+                if (day * month) == (year % 100):
+                    Years.append(
+                        f"{day} {Months[(month - 1)]}, {year}"
+                    )
+    return Years
+
+FullList = YearGenerator()
+Small = YearGenerator(1890, 1920)
+
+print(f"This is a smaller list of magic dates from 1890 to 1920 {Small}\n")
+
+day = 1
+print(f"This is the full list for 1900-2000:")
+for date in FullList:
+    print(f"{day}: {date}")
+    day +=1

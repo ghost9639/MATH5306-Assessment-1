@@ -1,0 +1,27 @@
+To account for range loops not including the top value, I added +1 to all the
+day values in post, instead of just saying 31 day months technically have a 32
+day cap. Initially every MaxDay assignment was a for loop but it made it more
+readable to put the magic date filler at the end and only assign day limits when
+months were accounted for.
+
+Create empty list of magic dates, month names (readability), 31 day months, MaxDays integer
+
+First, over every year:
+
+       Check whether the month has 31 days -> assign 31 days to MaxDay
+
+       We check whether the Month is February:
+
+       	  We check whether the year is a leap year -> We set MaxDay to 29
+
+	  If it's not a leap year -> We set MaxDay to 28
+
+       The only remaining months have 30 days -> set MaxDay to 30
+
+       For each day in the month:
+              
+       	   if the month * day is equal to the last two digits of the year:
+	   
+	      Add it to the Year list
+
+Return a list of magic dates.

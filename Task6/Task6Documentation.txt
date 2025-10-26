@@ -1,0 +1,8 @@
+Classic prime algorithm:
+1 and 2 are handled as edge cases, the function counts from 2 till the value before the
+number. If any can perfectly divide into the number being tested (ie num % x == 0),
+the function has found a factor of prime, and returns false.
+If no factors are found, it returns true.
+
+People calling these functions typically expect boolean return types,
+but prewritten print statements make output more readable.

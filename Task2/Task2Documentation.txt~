@@ -1,0 +1,11 @@
+I am a c and java programmer, I prefer to handle issues using data storage systems and objects.
+This caroler function defines two lists, the lyrics (1 -> 12) and the days (1 -> 12).
+Since the first day only has the partridge, it's handled separately at the beginning.
+A daysPassed variable is used to count the number of days, moving up the list.
+A temp variable borrows daysPassed,it starts at the day's position in the list of gifts,
+and moves down to 0 (first index)
+
+basically
+
+for each day from 1 to 12:
+    count down gifts from day

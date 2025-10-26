@@ -1,0 +1,10 @@
+This caroler function defines two lists, the lyrics (1 -> 12) and the days (2 -> 12).
+This permits easy access if the lyrics need to be edited or rewritten later.
+Since the first day only has the partridge, it's handled separately at the beginning.
+A daysPassed variable is used to count the number of days, moving up the list.
+A temp variable borrows daysPassed, it starts at the day's position in the list of gifts,
+and moves down to 0 (first index). This efficiently draws lyrics from the main Lyrics
+list and outputs them safely. 
+
+for each day from 1 to 12:
+    count down gifts from day

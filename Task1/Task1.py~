@@ -1,0 +1,26 @@
+
+# Task 1: Median of Three Values
+
+def medianFinder3(num1, num2, num3):
+    """finds the median for three numbers by manually sorting list"""
+    myList = [num1, num2, num3]
+    if myList[0] > myList[2]:
+        myList[0], myList[2] = myList[2], myList[0]
+        
+    if myList[0] > myList[1]:
+        myList[0], myList[1] = myList[1], myList[0]
+        
+    if myList[1] > myList[2]:
+        myList[1], myList[2] = myList[2], myList[1]
+        
+    return myList[1]
+
+
+
+
+print("This is an iostream opened for Task 1: Finding the Median")
+print("If you could kindly think of three numbers to enter one by one below")
+num1 = int(input("Please enter the first value: "))
+num2 = int(input("Please enter the second value: "))
+num3 = int(input("Please enter the third value: "))
+print(f"The median of those numbers is {medianFinder3(num1, num2, num3)}.")

@@ -1,0 +1,33 @@
+
+# Task 2: The Twelve Days of Christmas
+def caroler():
+    """prints the 12 days of christmas as per
+    https://hymnallibrary.org/hymns/the-twelve-days-of-christmas-full/"""
+    Lyrics = ["And a partridge in a pear tree!", "Two turtle doves,",
+              "Three French hens,", "Four calling birds,",
+              "Five gold rings,", "Six geese a-laying,",
+              "Seven swans a-swimming,", "Eight maids a-milking,",
+              "Nine ladies dancing,", "Ten lords a-leaping,",
+              "Eleven pipers piping,", "Twelve drummers drumming,",
+              "A patridge in a pear tree!"]
+    days = ["second", "third", "fourth", "fifth", "sixth", "seventh",
+            "eighth", "ninth", "tenth", "eleventh", "twelth"]
+    daysPassed = 0
+    
+    print(f"On the first day of Christmas,\nMy true love sent to me,")
+    print(Lyrics[12])
+    print("\n")
+    
+    for day in days:
+        print(f"On the {day} day of Christmas,\nMy true love sent to me,")
+        daysPassed += 1
+        temp = daysPassed
+        while temp > -1:
+            print(Lyrics[temp])
+            temp -= 1
+        print("\n")
+    
+
+
+# effective main
+caroler()

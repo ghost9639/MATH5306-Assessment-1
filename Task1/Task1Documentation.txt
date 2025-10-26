@@ -1,0 +1,5 @@
+We can make a simple median algorithm for three numbers by sorting the list.
+Python tuple assignment makes reading the program very easy, and the print
+statement is broken across two lines to avoid breaking the 78 character limit.
+The sorting algorithm swaps any numbers higher in value than a number of
+higher index.

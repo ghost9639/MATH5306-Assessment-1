@@ -1,0 +1,5 @@
+The median of three numbers is the 2nd element (1 in a 0 indexing system)
+when the list is sorted. This algorithm puts the inputs into a list, and
+asserts that any variable of a higher index has higher value. Python
+tuple assignment streamlines reading the assignments for a different
+programmer. The main also asserts that the three user inputs are integers.
